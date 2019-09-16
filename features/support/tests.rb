@@ -17,4 +17,9 @@ class Tests
       @calculator_tests ||= CalculatorTest.new(@pages)
       @calculator_tests
     end
+
+    def application_tests
+      @application_tests ||=ApplicationTest.new(@pages)
+      @application_tests
+    end
 end

@@ -34,8 +34,99 @@ class CalculatorPage
         @button_approve_conditions = Element.new(:xpath, "//*[@id='e_application_root']/descendant::button[text() = 'Approve conditions']")
     end
 
+    def select_financial_leasing
+        @button_financial_leasing.click
+    end
+
+    def select_operate_leasing
+        @button_operate_leasing.click
+    end
+
+    def select_car_brand(brand)
+        @dropdown_brand.select(brand)
+    end
+
+    def select_car_model(model)
+        @dropdown_model.select(model)
+    end
+
+    def enter_car_price(amount)
+        @input_price.clear_text
+        @input_price.send_keys(amount)
+    end
+
+    def select_car_year(year)
+        @dropdown_year.select(year)
+    end
+
+    def select_dp_0
+        @button_dp_0.click
+    end
+
+    def select_dp_10
+        @button_dp_10.click
+    end
+
+    def select_dp_15
+        @button_dp_15.click
+    end
+
+    def select_dp_20
+        @button_dp_20.click
+    end
+
+    def select_dp_25
+        @button_dp_25.click
+    end
+
+    def select_dp_30
+        @button_dp_30.click
+    end
+
+    def select_lp_2
+        @button_lp_2.click
+    end
+
+    def select_lp_3
+        @button_lp_3.click
+    end
+
+    def select_lp_4
+        @button_lp_4.click
+    end
+
+    def select_lp_5
+        @button_lp_5.click
+    end
+
+    def select_lp_6
+        @button_lp_6.click
+    end
+
+    def select_lp_7
+        @button_lp_7.click
+    end
+
+    def select_dealer_city(city)
+        @dropdown_dealer_city.select(city)
+    end
+
+    def select_dealer_company(company)
+        @dropdown_dealer_company.select(company)
+    end
+
+    def select_dealer_rep(name)
+        @dropdown_dealer_rep.select(name)
+    end
+
+    def select_approve_conditions
+        @button_approve_conditions.click
+    end
+
     def visible?
         @button_financial_leasing.visible?
         @button_operate_leasing.visible?
+        @button_get_offer.visible?
+        @button_approve_conditions.visible?
     end
 end
