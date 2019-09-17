@@ -123,6 +123,20 @@ class CalculatorPage
         @button_approve_conditions.click
     end
 
+    def check_residual
+        @checkbox_residual.check
+    end
+
+    def enter_mileage_limit(miles)
+        @input_mileage_limit.clear_text
+        @input_mileage_limit.send_keys(miles)
+    end
+
+    def enter_mileage_current(miles)
+        @input_mileage_current.clear_text
+        @input_mileage_current.send_keys(miles)
+    end
+
     def visible?
         @button_financial_leasing.visible?
         @button_operate_leasing.visible?

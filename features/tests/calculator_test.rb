@@ -84,4 +84,16 @@ class CalculatorTest
     def select_approve_conditions
         @pages.page_calculator.select_approve_conditions
     end
+
+    def check_residual
+        @pages.page_calculator.check_residual
+    end
+    
+    def enter_mileage_limit(miles)
+        @pages.page_calculator.enter_mileage_limit(miles)
+    end
+
+    def enter_mileage_current(miles)
+        @pages.page_calculator.enter_mileage_current(miles)
+    end
 end

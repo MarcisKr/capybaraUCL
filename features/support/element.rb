@@ -31,6 +31,10 @@ class Element
     find.set ' '
   end
 
+  def check
+    find.check()
+  end
+
   def select(value)
     find.select(value)
   end
