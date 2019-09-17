@@ -1,6 +1,6 @@
 require 'capybara/cucumber'
 require 'selenium-webdriver'
-require 'capybara-screenshot'
+require 'capybara-screenshot/cucumber'
 require 'webdrivers'
 require 'capybara/rspec'
 require 'site_prism'

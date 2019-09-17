@@ -1,5 +1,5 @@
 Feature: Leasing calculator
-    @dev
+    
     Scenario Outline: User creates <type> leasing application for <age> <brand> <model> that costs <price>
         Given I am in calculator page
         And I fill calculator for <type> leasing for <age> <brand> <model> that costs <price>
