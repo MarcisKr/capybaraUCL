@@ -30,4 +30,12 @@ class Element
   def clear_text
     find.set ' '
   end
+
+  def check
+    find.check()
+  end
+
+  def select(value)
+    find.select(value)
+  end
 end

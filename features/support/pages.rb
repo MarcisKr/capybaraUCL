@@ -13,4 +13,9 @@ class Pages
     @page_calculator ||= CalculatorPage.new
     @page_calculator
   end
+
+  def page_application
+    @page_application ||= ApplicationPage.new
+    @page_application
+  end
 end
