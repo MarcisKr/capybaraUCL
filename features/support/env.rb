@@ -5,10 +5,19 @@ require 'webdrivers'
 require 'capybara/rspec'
 require 'site_prism'
 
-Capybara.default_driver = :selenium
 Capybara.app_host = "https://test.unicredit.ee/en/e-application"
-Capybara.register_driver :selenium do |app|
-    Capybara::Selenium::Driver.new(app, browser: :chrome)
+
+if ENV['chrome']
+    Capybara.default_driver = :chrome
+    Capybara.register_driver :chrome do |app|
+        Capybara::Selenium::Driver.new(app, browser: :chrome)
+    end
+elsif ENV['firefox']
+    capabilities = Selenium::WebDriver::Remote::Capabilities.firefox(accept_insecure_certs: true)
+    Capybara.default_driver = :firefox
+    Capybara.register_driver :firefox do |app|
+        Capybara::Selenium::Driver.new(app, browser: :firefox, :desired_capabilities => capabilities)
+    end
 end
 
 Before do |scenario|
