@@ -1,0 +1,632 @@
+[
+  {
+    "uri": "features/calculator.feature",
+    "id": "leasing-calculator",
+    "keyword": "Feature",
+    "name": "Leasing calculator",
+    "description": "",
+    "line": 1,
+    "elements": [
+      {
+        "id": "leasing-calculator;user-creates-<type>-leasing-application-for-<age>-<brand>-<model>-that-costs-<price>;;2",
+        "keyword": "Scenario Outline",
+        "name": "User creates <type> leasing application for <age> <brand> <model> that costs <price>",
+        "description": "",
+        "line": 13,
+        "type": "scenario",
+        "tags": [
+          {
+            "name": "@dev",
+            "line": 2
+          }
+        ],
+        "before": [
+          {
+            "match": {
+              "location": "capybara-3.28.0/lib/capybara/cucumber.rb:14"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 26000
+            }
+          },
+          {
+            "match": {
+              "location": "capybara-3.28.0/lib/capybara/cucumber.rb:22"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 34000
+            }
+          },
+          {
+            "match": {
+              "location": "capybara-screenshot-1.0.23/lib/capybara-screenshot/cucumber.rb:3"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 27000
+            }
+          },
+          {
+            "match": {
+              "location": "features/support/env.rb:23"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2790296000
+            }
+          }
+        ],
+        "steps": [
+          {
+            "keyword": "Given ",
+            "name": "I am in calculator page",
+            "line": 4,
+            "match": {
+              "location": "features/step_definitions/calculator_steps.rb:5"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 8286412000
+            }
+          },
+          {
+            "keyword": "And ",
+            "name": "I fill calculator for \"financial\" leasing for \"New\" \"Audi\" \"A3\" that costs \"9100\"",
+            "line": 5,
+            "match": {
+              "location": "features/step_definitions/calculator_steps.rb:14"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 4791111000
+            }
+          },
+          {
+            "keyword": "When ",
+            "name": "I approve conditions",
+            "line": 6,
+            "match": {
+              "location": "features/step_definitions/calculator_steps.rb:30"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 245832000
+            }
+          },
+          {
+            "keyword": "Then ",
+            "name": "I have created leasing application",
+            "line": 7,
+            "match": {
+              "location": "features/step_definitions/application_steps.rb:1"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 709615000
+            }
+          },
+          {
+            "keyword": "And ",
+            "name": "I see \"3.00 %\" interest rate",
+            "line": 8,
+            "match": {
+              "location": "features/step_definitions/application_steps.rb:5"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 25852000
+            }
+          },
+          {
+            "keyword": "And ",
+            "name": "I delete created application",
+            "line": 9,
+            "match": {
+              "location": "features/step_definitions/application_steps.rb:9"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 3661627000
+            }
+          }
+        ],
+        "after": [
+          {
+            "match": {
+              "location": "features/support/env.rb:31"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 37000
+            }
+          },
+          {
+            "match": {
+              "location": "capybara-screenshot-1.0.23/lib/capybara-screenshot/cucumber.rb:7"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 28000
+            }
+          },
+          {
+            "match": {
+              "location": "capybara-3.28.0/lib/capybara/cucumber.rb:10"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 187735000
+            }
+          }
+        ]
+      },
+      {
+        "id": "leasing-calculator;user-creates-<type>-leasing-application-for-<age>-<brand>-<model>-that-costs-<price>;;3",
+        "keyword": "Scenario Outline",
+        "name": "User creates <type> leasing application for <age> <brand> <model> that costs <price>",
+        "description": "",
+        "line": 14,
+        "type": "scenario",
+        "tags": [
+          {
+            "name": "@dev",
+            "line": 2
+          }
+        ],
+        "before": [
+          {
+            "match": {
+              "location": "capybara-3.28.0/lib/capybara/cucumber.rb:14"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 23000
+            }
+          },
+          {
+            "match": {
+              "location": "capybara-3.28.0/lib/capybara/cucumber.rb:22"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 20000
+            }
+          },
+          {
+            "match": {
+              "location": "capybara-screenshot-1.0.23/lib/capybara-screenshot/cucumber.rb:3"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 14000
+            }
+          },
+          {
+            "match": {
+              "location": "features/support/env.rb:23"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 5682000
+            }
+          }
+        ],
+        "steps": [
+          {
+            "keyword": "Given ",
+            "name": "I am in calculator page",
+            "line": 4,
+            "match": {
+              "location": "features/step_definitions/calculator_steps.rb:5"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 7106507000
+            }
+          },
+          {
+            "keyword": "And ",
+            "name": "I fill calculator for \"operate\" leasing for \"New\" \"Audi\" \"TT\" that costs \"8500\"",
+            "line": 5,
+            "match": {
+              "location": "features/step_definitions/calculator_steps.rb:14"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1754043000
+            }
+          },
+          {
+            "keyword": "When ",
+            "name": "I approve conditions",
+            "line": 6,
+            "match": {
+              "location": "features/step_definitions/calculator_steps.rb:30"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 234581000
+            }
+          },
+          {
+            "keyword": "Then ",
+            "name": "I have created leasing application",
+            "line": 7,
+            "match": {
+              "location": "features/step_definitions/application_steps.rb:1"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 478389000
+            }
+          },
+          {
+            "keyword": "And ",
+            "name": "I see \"3.45 %\" interest rate",
+            "line": 8,
+            "match": {
+              "location": "features/step_definitions/application_steps.rb:5"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 23445000
+            }
+          },
+          {
+            "keyword": "And ",
+            "name": "I delete created application",
+            "line": 9,
+            "match": {
+              "location": "features/step_definitions/application_steps.rb:9"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 3793321000
+            }
+          }
+        ],
+        "after": [
+          {
+            "match": {
+              "location": "features/support/env.rb:31"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 21000
+            }
+          },
+          {
+            "match": {
+              "location": "capybara-screenshot-1.0.23/lib/capybara-screenshot/cucumber.rb:7"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 18000
+            }
+          },
+          {
+            "match": {
+              "location": "capybara-3.28.0/lib/capybara/cucumber.rb:10"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 137300000
+            }
+          }
+        ]
+      },
+      {
+        "id": "leasing-calculator;user-creates-<type>-leasing-application-for-<age>-<brand>-<model>-that-costs-<price>;;4",
+        "keyword": "Scenario Outline",
+        "name": "User creates <type> leasing application for <age> <brand> <model> that costs <price>",
+        "description": "",
+        "line": 15,
+        "type": "scenario",
+        "tags": [
+          {
+            "name": "@dev",
+            "line": 2
+          }
+        ],
+        "before": [
+          {
+            "match": {
+              "location": "capybara-3.28.0/lib/capybara/cucumber.rb:14"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 19000
+            }
+          },
+          {
+            "match": {
+              "location": "capybara-3.28.0/lib/capybara/cucumber.rb:22"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 18000
+            }
+          },
+          {
+            "match": {
+              "location": "capybara-screenshot-1.0.23/lib/capybara-screenshot/cucumber.rb:3"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 9000
+            }
+          },
+          {
+            "match": {
+              "location": "features/support/env.rb:23"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 6076000
+            }
+          }
+        ],
+        "steps": [
+          {
+            "keyword": "Given ",
+            "name": "I am in calculator page",
+            "line": 4,
+            "match": {
+              "location": "features/step_definitions/calculator_steps.rb:5"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 7098651000
+            }
+          },
+          {
+            "keyword": "And ",
+            "name": "I fill calculator for \"financial\" leasing for \"2018\" \"Audi\" \"A3\" that costs \"5000\"",
+            "line": 5,
+            "match": {
+              "location": "features/step_definitions/calculator_steps.rb:14"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1910092000
+            }
+          },
+          {
+            "keyword": "When ",
+            "name": "I approve conditions",
+            "line": 6,
+            "match": {
+              "location": "features/step_definitions/calculator_steps.rb:30"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 203018000
+            }
+          },
+          {
+            "keyword": "Then ",
+            "name": "I have created leasing application",
+            "line": 7,
+            "match": {
+              "location": "features/step_definitions/application_steps.rb:1"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 402559000
+            }
+          },
+          {
+            "keyword": "And ",
+            "name": "I see \"3.45 %\" interest rate",
+            "line": 8,
+            "match": {
+              "location": "features/step_definitions/application_steps.rb:5"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 29961000
+            }
+          },
+          {
+            "keyword": "And ",
+            "name": "I delete created application",
+            "line": 9,
+            "match": {
+              "location": "features/step_definitions/application_steps.rb:9"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 4078335000
+            }
+          }
+        ],
+        "after": [
+          {
+            "match": {
+              "location": "features/support/env.rb:31"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 15000
+            }
+          },
+          {
+            "match": {
+              "location": "capybara-screenshot-1.0.23/lib/capybara-screenshot/cucumber.rb:7"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 11000
+            }
+          },
+          {
+            "match": {
+              "location": "capybara-3.28.0/lib/capybara/cucumber.rb:10"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 139197000
+            }
+          }
+        ]
+      },
+      {
+        "id": "leasing-calculator;user-creates-<type>-leasing-application-for-<age>-<brand>-<model>-that-costs-<price>;;5",
+        "keyword": "Scenario Outline",
+        "name": "User creates <type> leasing application for <age> <brand> <model> that costs <price>",
+        "description": "",
+        "line": 16,
+        "type": "scenario",
+        "tags": [
+          {
+            "name": "@dev",
+            "line": 2
+          }
+        ],
+        "before": [
+          {
+            "match": {
+              "location": "capybara-3.28.0/lib/capybara/cucumber.rb:14"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 19000
+            }
+          },
+          {
+            "match": {
+              "location": "capybara-3.28.0/lib/capybara/cucumber.rb:22"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 17000
+            }
+          },
+          {
+            "match": {
+              "location": "capybara-screenshot-1.0.23/lib/capybara-screenshot/cucumber.rb:3"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 9000
+            }
+          },
+          {
+            "match": {
+              "location": "features/support/env.rb:23"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 5842000
+            }
+          }
+        ],
+        "steps": [
+          {
+            "keyword": "Given ",
+            "name": "I am in calculator page",
+            "line": 4,
+            "match": {
+              "location": "features/step_definitions/calculator_steps.rb:5"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 12834625000
+            }
+          },
+          {
+            "keyword": "And ",
+            "name": "I fill calculator for \"operate\" leasing for \"2018\" \"Audi\" \"TT\" that costs \"7333\"",
+            "line": 5,
+            "match": {
+              "location": "features/step_definitions/calculator_steps.rb:14"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 17600619000
+            }
+          },
+          {
+            "keyword": "When ",
+            "name": "I approve conditions",
+            "line": 6,
+            "match": {
+              "location": "features/step_definitions/calculator_steps.rb:30"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 5418124000
+            }
+          },
+          {
+            "keyword": "Then ",
+            "name": "I have created leasing application",
+            "line": 7,
+            "match": {
+              "location": "features/step_definitions/application_steps.rb:1"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 437955000
+            }
+          },
+          {
+            "keyword": "And ",
+            "name": "I see \"3.90 %\" interest rate",
+            "line": 8,
+            "match": {
+              "location": "features/step_definitions/application_steps.rb:5"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 30164000
+            }
+          },
+          {
+            "keyword": "And ",
+            "name": "I delete created application",
+            "line": 9,
+            "match": {
+              "location": "features/step_definitions/application_steps.rb:9"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 4628384000
+            }
+          }
+        ],
+        "after": [
+          {
+            "match": {
+              "location": "features/support/env.rb:31"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 18000
+            }
+          },
+          {
+            "match": {
+              "location": "capybara-screenshot-1.0.23/lib/capybara-screenshot/cucumber.rb:7"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 21000
+            }
+          },
+          {
+            "match": {
+              "location": "capybara-3.28.0/lib/capybara/cucumber.rb:10"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 237004000
+            }
+          }
+        ]
+      }
+    ]
+  }
+]

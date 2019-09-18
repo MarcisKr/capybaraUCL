@@ -6,6 +6,7 @@ Feature: Leasing calculator
         When I approve conditions
         Then I have created leasing application
         And I see <percent> interest rate
+        And I delete created application
 
     Examples:
     | type        | age    | brand  | model | price  | percent  |

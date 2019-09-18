@@ -28,6 +28,9 @@ Before do |scenario|
     Capybara.default_max_wait_time = 30
 end
 
+After do |scenario|
+end
+
 def add_cookie(name, value, domain, expiration_date)
     Capybara.current_session.driver.browser.manage.add_cookie(name: name, value: value, domain: domain)
 end

@@ -120,7 +120,11 @@ class CalculatorPage
     end
 
     def select_approve_conditions
-        @button_approve_conditions.click
+        if @button_approve_conditions.disabled?
+            fail("'APPROVE CONDITIONS' button is disabled!")
+        else
+            @button_approve_conditions.click
+        end
     end
 
     def check_residual
