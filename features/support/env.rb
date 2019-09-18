@@ -18,6 +18,11 @@ elsif ENV['firefox']
     Capybara.register_driver :firefox do |app|
         Capybara::Selenium::Driver.new(app, browser: :firefox, :desired_capabilities => capabilities)
     end
+elsif ENV['safari']
+    Capybara.default_driver = :safari
+    Capybara.register_driver :safari do |app|
+        Capybara::Selenium::Driver.new(app, browser: :safari)
+    end
 end
 
 Before do |scenario|
