@@ -30,3 +30,19 @@ end
 When("I approve conditions") do
     @tests.calculator_tests.select_approve_conditions
 end
+
+When("I approve conditions neg") do
+    @tests.calculator_tests.select_approve_conditions_neg
+end
+
+Then("I see {string} calculator error") do |er|
+    @tests.calculator_tests.error_is(er)
+end
+
+When("I select {string} leasing") do |type|
+    @tests.calculator_tests.select_leasing(type)
+end
+
+When("I enter car price - {string}") do |price|
+    @tests.calculator_tests.enter_car_price(price)
+end

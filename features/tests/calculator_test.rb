@@ -85,6 +85,10 @@ class CalculatorTest
         @pages.page_calculator.select_approve_conditions
     end
 
+    def select_approve_conditions_neg
+        @pages.page_calculator.select_approve_conditions_neg
+    end
+
     def check_residual
         @pages.page_calculator.check_residual
     end
@@ -95,5 +99,9 @@ class CalculatorTest
 
     def enter_mileage_current(miles)
         @pages.page_calculator.enter_mileage_current(miles)
+    end
+
+    def error_is(text)
+        @pages.page_calculator.error_is(text)
     end
 end
