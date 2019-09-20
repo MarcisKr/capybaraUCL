@@ -2,9 +2,9 @@ Then("I am in leasing calculator") do
     @tests.calculator_tests.in_calculator
 end
 
-Given("I am in calculator page") do
+Given("I am in calculator page with user - {string}") do |usr|
     @tests.login_tests.load_login_page
-    @tests.login_tests.fill_person_code("00000000000")
+    @tests.login_tests.fill_person_code(usr)
     @tests.login_tests.select_next_button(false)
     @tests.login_tests.logged_in
     @tests.account_tests.open_calculator
