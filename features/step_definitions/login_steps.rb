@@ -11,11 +11,11 @@ When("I fill in mobile phone field with {string}") do |number|
 end    
 
 When("I select NEXT button") do
-    @tests.login_tests.select_next_button_pos
+    @tests.login_tests.select_next_button(false)
 end
 
 When("I select NEXT button disabled") do
-    @tests.login_tests.select_next_button_neg
+    @tests.login_tests.select_next_button(true)
 end
 
 Then("I am logged in EAPP") do

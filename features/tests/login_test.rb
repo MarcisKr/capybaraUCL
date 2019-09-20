@@ -12,12 +12,8 @@ class LoginTest
     @pages.page_login.fill_person_code(code)
   end
 
-  def select_next_button_pos
-    @pages.page_login.click_next_button_pos
-  end
-
-  def select_next_button_neg
-    @pages.page_login.click_next_button_neg
+  def select_next_button(neg)
+    @pages.page_login.click_next_button(neg)
   end
 
   def logged_in

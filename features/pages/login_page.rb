@@ -22,14 +22,16 @@ class LoginPage < BasePage
     @input_person_code.send_keys(code)
   end
 
-  def click_next_button_pos
-    while @button_next.disabled? == true
+  def click_next_button(neg)
+    if neg == false
+      while @button_next.disabled? == true
+      end
+      @button_next.click
+    elsif neg == true
+      @button_next.click
+    else
+      fail("Wrong value for function!")
     end
-    @button_next.click
-  end
-
-  def click_next_button_neg
-    @button_next.click
   end
 
   def clear_person_code

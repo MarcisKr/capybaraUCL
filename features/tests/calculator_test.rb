@@ -81,12 +81,8 @@ class CalculatorTest
         @pages.page_calculator.select_dealer_rep(name)
     end
 
-    def select_approve_conditions
-        @pages.page_calculator.select_approve_conditions
-    end
-
-    def select_approve_conditions_neg
-        @pages.page_calculator.select_approve_conditions_neg
+    def select_approve_conditions(neg)
+        @pages.page_calculator.select_approve_conditions(neg)
     end
 
     def check_residual
