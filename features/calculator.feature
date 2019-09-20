@@ -1,3 +1,4 @@
+@dev
 Feature: Leasing calculator
     
     Scenario Outline: User creates leasing application for car
@@ -24,7 +25,7 @@ Feature: Leasing calculator
         Given I am in calculator page
         When I enter car price - "0"
         Then I see "Down payment is too large" calculator error
-    @dev
+    
     Scenario: User can't approve conditiions for car that costs 10k or more
         Given I am in calculator page
         And I select "financial" leasing

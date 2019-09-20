@@ -5,7 +5,7 @@ end
 Given("I am in calculator page") do
     @tests.login_tests.load_login_page
     @tests.login_tests.fill_person_code("00000000000")
-    @tests.login_tests.select_next_button_pos
+    @tests.login_tests.select_next_button(false)
     @tests.login_tests.logged_in
     @tests.account_tests.open_calculator
     @tests.calculator_tests.in_calculator
@@ -28,11 +28,11 @@ When("I fill calculator for {string} leasing for {string} {string} {string} that
 end
 
 When("I approve conditions") do
-    @tests.calculator_tests.select_approve_conditions
+    @tests.calculator_tests.select_approve_conditions(false)
 end
 
 When("I approve conditions neg") do
-    @tests.calculator_tests.select_approve_conditions_neg
+    @tests.calculator_tests.select_approve_conditions(true)
 end
 
 Then("I see {string} calculator error") do |er|

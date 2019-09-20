@@ -120,16 +120,18 @@ class CalculatorPage
         @dropdown_dealer_rep.select(name)
     end
 
-    def select_approve_conditions
-        if @button_approve_conditions.disabled?
-            fail("'APPROVE CONDITIONS' button is disabled!")
+    def select_approve_conditions(neg)
+        if neg == false
+            if @button_approve_conditions.disabled?
+                fail("'APPROVE CONDITIONS' button is disabled!")
+            else
+                @button_approve_conditions.click
+            end
+        elsif neg == true
+            @button_approve_conditions.click
         else
-            @button_approve_conditions.click
+            fail("Wrong value for function!")
         end
-    end
-
-    def select_approve_conditions_neg
-            @button_approve_conditions.click
     end
 
     def check_residual
