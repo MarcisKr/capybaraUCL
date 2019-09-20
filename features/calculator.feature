@@ -25,9 +25,3 @@ Feature: Leasing calculator
         Given I am in calculator page with user - "00000000000"
         When I enter car price - "0"
         Then I see "Down payment is too large" calculator error
-    
-    Scenario: User can't approve conditiions for car that costs 10k or more
-        Given I am in calculator page with user - "00000000000"
-        And I select "financial" leasing
-        When I approve conditions neg
-        Then I am in leasing calculator
