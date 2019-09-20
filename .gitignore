@@ -3,6 +3,6 @@
 #ignore failure screenshots
 screenshot*
 #ignore report json
-report.json
+*.json
 #ignore html report file
-cucumber_web_report.html
+*.html
