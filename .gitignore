@@ -1,0 +1,8 @@
+#ignore mac system files
+.DS_Store
+#ignore failure screenshots
+screenshot*
+#ignore report json
+report.json
+#ignore html report file
+cucumber_web_report.html

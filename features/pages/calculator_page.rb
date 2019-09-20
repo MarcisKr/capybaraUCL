@@ -2,7 +2,7 @@ class CalculatorPage
     def initialize
         @button_financial_leasing = Element.new(:xpath, "//*[@id='e_application_root']/descendant::button[text() = 'Financial leasing']")
         @button_operate_leasing = Element.new(:xpath, "//*[@id='e_application_root']/descendant::button[text() = 'Operate lease']")
-        @dropdown_brand = Element.new(:xpath, "//*[@id='e_application_root']/descendant::select[@name = 'make']")
+        @dropdown_brand = Element.new(:xpath, "//*[@id='e_application_root']/descendant::label[text() = 'Car brand']/following::select[@name = 'make']")
         @dropdown_model = Element.new(:xpath, "//*[@id='e_application_root']/descendant::div[@class = 'form-group']/label[@for = 'model']/following::select[1]")
         @input_price = Element.new(:xpath, "//*[@id='e_application_root']/descendant::input[@name = 'carPrice']")
         @dropdown_year = Element.new(:xpath, "//*[@id='e_application_root']/descendant::select[@name = 'manufactureYear']")
@@ -32,6 +32,7 @@ class CalculatorPage
         @button_payment_schedule = Element.new(:xpath, "//*[@id='e_application_root']/descendant::button[text() = 'Payment schedule']")
         @button_get_offer = Element.new(:xpath, "//*[@id='e_application_root']/descendant::button[text() = 'Get an offer']")
         @button_approve_conditions = Element.new(:xpath, "//*[@id='e_application_root']/descendant::button[text() = 'Approve conditions']")
+        @error_message = Element.new(:xpath, "//*[@id='e_application_root']/descendant::div[@class = 'invalid-feedback']")
     end
 
     def select_financial_leasing
@@ -127,6 +128,10 @@ class CalculatorPage
         end
     end
 
+    def select_approve_conditions_neg
+            @button_approve_conditions.click
+    end
+
     def check_residual
         @checkbox_residual.check
     end
@@ -139,6 +144,10 @@ class CalculatorPage
     def enter_mileage_current(miles)
         @input_mileage_current.clear_text
         @input_mileage_current.send_keys(miles)
+    end
+
+    def error_is(text)
+        @error_message.text_is(text)
     end
 
     def visible?

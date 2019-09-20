@@ -27,7 +27,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 26000
+              "duration": 45000
             }
           },
           {
@@ -36,7 +36,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 34000
+              "duration": 40000
             }
           },
           {
@@ -45,16 +45,16 @@
             },
             "result": {
               "status": "passed",
-              "duration": 27000
+              "duration": 19000
             }
           },
           {
             "match": {
-              "location": "features/support/env.rb:23"
+              "location": "features/support/env.rb:28"
             },
             "result": {
               "status": "passed",
-              "duration": 2790296000
+              "duration": 5159904000
             }
           }
         ],
@@ -68,7 +68,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 8286412000
+              "duration": 9196301000
             }
           },
           {
@@ -80,7 +80,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 4791111000
+              "duration": 3697505000
             }
           },
           {
@@ -91,8 +91,9 @@
               "location": "features/step_definitions/calculator_steps.rb:30"
             },
             "result": {
-              "status": "passed",
-              "duration": 245832000
+              "status": "failed",
+              "error_message": "'APPROVE CONDITIONS' button is disabled! (RuntimeError)\n./features/pages/calculator_page.rb:124:in `select_approve_conditions'\n./features/tests/calculator_test.rb:85:in `select_approve_conditions'\n./features/step_definitions/calculator_steps.rb:31:in `\"I approve conditions\"'\nfeatures/calculator.feature:13:in `When I approve conditions'\nfeatures/calculator.feature:6:in `When I approve conditions'",
+              "duration": 7781000
             }
           },
           {
@@ -103,8 +104,7 @@
               "location": "features/step_definitions/application_steps.rb:1"
             },
             "result": {
-              "status": "passed",
-              "duration": 709615000
+              "status": "skipped"
             }
           },
           {
@@ -115,8 +115,7 @@
               "location": "features/step_definitions/application_steps.rb:5"
             },
             "result": {
-              "status": "passed",
-              "duration": 25852000
+              "status": "skipped"
             }
           },
           {
@@ -127,19 +126,18 @@
               "location": "features/step_definitions/application_steps.rb:9"
             },
             "result": {
-              "status": "passed",
-              "duration": 3661627000
+              "status": "skipped"
             }
           }
         ],
         "after": [
           {
             "match": {
-              "location": "features/support/env.rb:31"
+              "location": "features/support/env.rb:36"
             },
             "result": {
               "status": "passed",
-              "duration": 37000
+              "duration": 22000
             }
           },
           {
@@ -148,7 +146,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 28000
+              "duration": 40732000
             }
           },
           {
@@ -157,7 +155,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 187735000
+              "duration": 88039000
             }
           }
         ]
@@ -182,7 +180,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 23000
+              "duration": 33000
             }
           },
           {
@@ -191,7 +189,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 20000
+              "duration": 29000
             }
           },
           {
@@ -200,16 +198,16 @@
             },
             "result": {
               "status": "passed",
-              "duration": 14000
+              "duration": 11000
             }
           },
           {
             "match": {
-              "location": "features/support/env.rb:23"
+              "location": "features/support/env.rb:28"
             },
             "result": {
               "status": "passed",
-              "duration": 5682000
+              "duration": 4145000
             }
           }
         ],
@@ -223,7 +221,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 7106507000
+              "duration": 8494807000
             }
           },
           {
@@ -235,7 +233,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 1754043000
+              "duration": 2742799000
             }
           },
           {
@@ -246,8 +244,9 @@
               "location": "features/step_definitions/calculator_steps.rb:30"
             },
             "result": {
-              "status": "passed",
-              "duration": 234581000
+              "status": "failed",
+              "error_message": "'APPROVE CONDITIONS' button is disabled! (RuntimeError)\n./features/pages/calculator_page.rb:124:in `select_approve_conditions'\n./features/tests/calculator_test.rb:85:in `select_approve_conditions'\n./features/step_definitions/calculator_steps.rb:31:in `\"I approve conditions\"'\nfeatures/calculator.feature:14:in `When I approve conditions'\nfeatures/calculator.feature:6:in `When I approve conditions'",
+              "duration": 7424000
             }
           },
           {
@@ -258,8 +257,7 @@
               "location": "features/step_definitions/application_steps.rb:1"
             },
             "result": {
-              "status": "passed",
-              "duration": 478389000
+              "status": "skipped"
             }
           },
           {
@@ -270,8 +268,7 @@
               "location": "features/step_definitions/application_steps.rb:5"
             },
             "result": {
-              "status": "passed",
-              "duration": 23445000
+              "status": "skipped"
             }
           },
           {
@@ -282,19 +279,18 @@
               "location": "features/step_definitions/application_steps.rb:9"
             },
             "result": {
-              "status": "passed",
-              "duration": 3793321000
+              "status": "skipped"
             }
           }
         ],
         "after": [
           {
             "match": {
-              "location": "features/support/env.rb:31"
+              "location": "features/support/env.rb:36"
             },
             "result": {
               "status": "passed",
-              "duration": 21000
+              "duration": 14000
             }
           },
           {
@@ -303,7 +299,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 18000
+              "duration": 38966000
             }
           },
           {
@@ -312,7 +308,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 137300000
+              "duration": 80537000
             }
           }
         ]
@@ -337,7 +333,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 19000
+              "duration": 35000
             }
           },
           {
@@ -346,7 +342,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 18000
+              "duration": 38000
             }
           },
           {
@@ -355,16 +351,16 @@
             },
             "result": {
               "status": "passed",
-              "duration": 9000
+              "duration": 13000
             }
           },
           {
             "match": {
-              "location": "features/support/env.rb:23"
+              "location": "features/support/env.rb:28"
             },
             "result": {
               "status": "passed",
-              "duration": 6076000
+              "duration": 4948000
             }
           }
         ],
@@ -378,7 +374,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 7098651000
+              "duration": 7364638000
             }
           },
           {
@@ -390,7 +386,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 1910092000
+              "duration": 3431016000
             }
           },
           {
@@ -401,8 +397,9 @@
               "location": "features/step_definitions/calculator_steps.rb:30"
             },
             "result": {
-              "status": "passed",
-              "duration": 203018000
+              "status": "failed",
+              "error_message": "'APPROVE CONDITIONS' button is disabled! (RuntimeError)\n./features/pages/calculator_page.rb:124:in `select_approve_conditions'\n./features/tests/calculator_test.rb:85:in `select_approve_conditions'\n./features/step_definitions/calculator_steps.rb:31:in `\"I approve conditions\"'\nfeatures/calculator.feature:15:in `When I approve conditions'\nfeatures/calculator.feature:6:in `When I approve conditions'",
+              "duration": 119516000
             }
           },
           {
@@ -413,8 +410,7 @@
               "location": "features/step_definitions/application_steps.rb:1"
             },
             "result": {
-              "status": "passed",
-              "duration": 402559000
+              "status": "skipped"
             }
           },
           {
@@ -425,8 +421,7 @@
               "location": "features/step_definitions/application_steps.rb:5"
             },
             "result": {
-              "status": "passed",
-              "duration": 29961000
+              "status": "skipped"
             }
           },
           {
@@ -437,19 +432,18 @@
               "location": "features/step_definitions/application_steps.rb:9"
             },
             "result": {
-              "status": "passed",
-              "duration": 4078335000
+              "status": "skipped"
             }
           }
         ],
         "after": [
           {
             "match": {
-              "location": "features/support/env.rb:31"
+              "location": "features/support/env.rb:36"
             },
             "result": {
               "status": "passed",
-              "duration": 15000
+              "duration": 28000
             }
           },
           {
@@ -458,7 +452,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 11000
+              "duration": 100710000
             }
           },
           {
@@ -467,7 +461,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 139197000
+              "duration": 199551000
             }
           }
         ]
@@ -492,7 +486,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 19000
+              "duration": 32000
             }
           },
           {
@@ -501,7 +495,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 17000
+              "duration": 29000
             }
           },
           {
@@ -510,16 +504,16 @@
             },
             "result": {
               "status": "passed",
-              "duration": 9000
+              "duration": 12000
             }
           },
           {
             "match": {
-              "location": "features/support/env.rb:23"
+              "location": "features/support/env.rb:28"
             },
             "result": {
               "status": "passed",
-              "duration": 5842000
+              "duration": 7354000
             }
           }
         ],
@@ -533,7 +527,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 12834625000
+              "duration": 8662397000
             }
           },
           {
@@ -545,7 +539,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 17600619000
+              "duration": 3700504000
             }
           },
           {
@@ -556,8 +550,9 @@
               "location": "features/step_definitions/calculator_steps.rb:30"
             },
             "result": {
-              "status": "passed",
-              "duration": 5418124000
+              "status": "failed",
+              "error_message": "'APPROVE CONDITIONS' button is disabled! (RuntimeError)\n./features/pages/calculator_page.rb:124:in `select_approve_conditions'\n./features/tests/calculator_test.rb:85:in `select_approve_conditions'\n./features/step_definitions/calculator_steps.rb:31:in `\"I approve conditions\"'\nfeatures/calculator.feature:16:in `When I approve conditions'\nfeatures/calculator.feature:6:in `When I approve conditions'",
+              "duration": 8688000
             }
           },
           {
@@ -568,8 +563,7 @@
               "location": "features/step_definitions/application_steps.rb:1"
             },
             "result": {
-              "status": "passed",
-              "duration": 437955000
+              "status": "skipped"
             }
           },
           {
@@ -580,8 +574,7 @@
               "location": "features/step_definitions/application_steps.rb:5"
             },
             "result": {
-              "status": "passed",
-              "duration": 30164000
+              "status": "skipped"
             }
           },
           {
@@ -592,19 +585,18 @@
               "location": "features/step_definitions/application_steps.rb:9"
             },
             "result": {
-              "status": "passed",
-              "duration": 4628384000
+              "status": "skipped"
             }
           }
         ],
         "after": [
           {
             "match": {
-              "location": "features/support/env.rb:31"
+              "location": "features/support/env.rb:36"
             },
             "result": {
               "status": "passed",
-              "duration": 18000
+              "duration": 14000
             }
           },
           {
@@ -613,7 +605,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 21000
+              "duration": 36139000
             }
           },
           {
@@ -622,7 +614,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 237004000
+              "duration": 39893000
             }
           }
         ]

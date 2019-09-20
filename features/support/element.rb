@@ -12,7 +12,11 @@ class Element
   end
 
   def click
-    find.click
+    if ENV['safari']
+      find.click()
+    else
+      find.click
+    end
   end
 
   def send_keys(value)
@@ -28,7 +32,11 @@ class Element
   end
 
   def clear_text
-    find.set ' '
+    if ENV['firefox']
+      find.set ''
+    else
+      find.set ' '
+    end
   end
 
   def check
@@ -36,6 +44,10 @@ class Element
   end
 
   def select(value)
-    find.select(value)
+    if ENV['safari']
+      find.select_value()#WIP don't  know what's the issue
+    else
+      find.select(value)
+    end
   end
 end
