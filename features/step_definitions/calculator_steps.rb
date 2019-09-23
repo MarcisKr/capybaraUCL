@@ -46,3 +46,11 @@ end
 When("I enter car price - {string}") do |price|
     @tests.calculator_tests.enter_car_price(price)
 end
+
+When("I enter {string} in allowed mileage field") do |miles|
+    @tests.calculator_tests.enter_mileage_limit(miles)
+end
+
+Then("I see allowed mileage limit error") do
+    @tests.calculator_tests.error_mileage_is("Allowed mileage (yearly) must be bigger than 0.")
+end

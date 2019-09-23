@@ -33,6 +33,7 @@ class CalculatorPage
         @button_get_offer = Element.new(:xpath, "//*[@id='e_application_root']/descendant::button[text() = 'Get an offer']")
         @button_approve_conditions = Element.new(:xpath, "//*[@id='e_application_root']/descendant::button[text() = 'Approve conditions']")
         @error_message = Element.new(:xpath, "//*[@id='e_application_root']/descendant::div[@class = 'invalid-feedback']")
+        @error_message_mileage = Element.new(:xpath, "//*[@id='e_application_root']/descendant::div[@class = 'residual-value row']/descendant::div[@class = 'invalid-feedback']")
     end
 
     def select_financial_leasing
@@ -150,6 +151,10 @@ class CalculatorPage
 
     def error_is(text)
         @error_message.text_is(text)
+    end
+
+    def error_mileage_is(text)
+        @error_message_mileage.text_is(text)
     end
 
     def visible?

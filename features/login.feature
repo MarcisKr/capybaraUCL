@@ -1,4 +1,3 @@
-@dev
 Feature: Login
    
    Scenario: User can login with Smart-ID

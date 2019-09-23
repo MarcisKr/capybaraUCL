@@ -97,6 +97,10 @@ class CalculatorTest
         @pages.page_calculator.enter_mileage_current(miles)
     end
 
+    def error_mileage_is(text)
+        @pages.page_calculator.error_mileage_is(text)
+    end
+
     def error_is(text)
         @pages.page_calculator.error_is(text)
     end

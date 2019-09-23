@@ -1,4 +1,3 @@
-@dev
 Feature: Leasing calculator
     
     Scenario Outline: User creates leasing application for car
@@ -25,3 +24,10 @@ Feature: Leasing calculator
         Given I am in calculator page with user - "00000000000"
         When I enter car price - "0"
         Then I see "Down payment is too large" calculator error
+    @dev
+    Scenario: Allowed mileage must be bigger than 0
+        Given I am in calculator page with user - "00000000000"
+        And I fill calculator for "operate" leasing for "New" "SKODA" "OCTAVIA" that costs "7777"
+        When I enter "0" in allowed mileage field
+        And I approve conditions
+        Then I see allowed mileage limit error
