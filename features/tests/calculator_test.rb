@@ -51,6 +51,10 @@ class CalculatorTest
         end
     end
 
+    def enter_dp(amount)
+        @pages.page_calculator.enter_dp(amount)
+    end
+
     def select_lp(years)
         if years == "2"
             @pages.page_calculator.select_lp_2
@@ -103,5 +107,9 @@ class CalculatorTest
 
     def error_is(text)
         @pages.page_calculator.error_is(text)
+    end
+
+    def dp_is(amount)
+        @pages.page_calculator.dp_is(amount)
     end
 end

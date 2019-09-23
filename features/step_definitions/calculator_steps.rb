@@ -54,3 +54,11 @@ end
 Then("I see allowed mileage limit error") do
     @tests.calculator_tests.error_mileage_is("Allowed mileage (yearly) must be bigger than 0.")
 end
+
+When("I enter {string} in first payment field") do |amount|
+    @tests.calculator_tests.enter_dp(amount)
+end
+
+Then("first payment amount is - {string}") do |amount|
+    @tests.calculator_tests.dp_is(amount)
+end

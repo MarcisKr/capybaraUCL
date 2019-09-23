@@ -20,7 +20,7 @@ Feature: Leasing calculator
         When I select "financial" leasing
         Then I see "Monthly payment exceeds monthly limit" calculator error
     
-    Scenario: User sees downpayment too big error
+    Scenario: User sees first payment too big error
         Given I am in calculator page with user - "00000000000"
         When I enter car price - "0"
         Then I see "Down payment is too large" calculator error
@@ -37,3 +37,9 @@ Feature: Leasing calculator
         And I fill calculator for "financial" leasing for "New" "Audi" "TT" that costs "30000"
         When I approve conditions neg
         Then I am in leasing calculator
+    @wip
+    Scenario: First payment can't be the same or bigger than the price
+        Given I am in calculator page with user - "00000000000"
+        And I fill calculator for "financial" leasing for "2018" "VW" "PASSAT" that costs "10000"
+        When I enter "10000" in first payment field
+        Then first payment amount is - "1000"

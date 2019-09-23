@@ -157,6 +157,15 @@ class CalculatorPage
         @error_message_mileage.text_is(text)
     end
 
+    def enter_dp(amount)
+        @input_downpayment.clear_text
+        @input_downpayment.send_keys(amount)
+    end
+
+    def dp_is(amount)
+        @input_downpayment.value_is(amount)
+    end
+
     def visible?
         @button_financial_leasing.visible?
         @button_operate_leasing.visible?

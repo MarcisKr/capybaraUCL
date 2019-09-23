@@ -27,6 +27,10 @@ class Element
     find.assert_text(text)
   end
 
+  def value_is(value)
+    find.value == value
+  end
+
   def disabled?
     find.disabled?
   end
