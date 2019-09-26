@@ -36,11 +36,7 @@ class Element
   end
 
   def clear_text
-    if ENV['firefox']
-      find.set ''
-    else
-      find.set ' '
-    end
+    find.value.length.times { find.send_keys [:backspace]}
   end
 
   def check
@@ -48,10 +44,10 @@ class Element
   end
 
   def select(value)
-    if ENV['safari']
-      find.select_value()#WIP don't  know what's the issue
-    else
-      find.select(value)
-    end
+    find.select(value)
+  end
+
+  def set(value)
+    find.set(value)
   end
 end

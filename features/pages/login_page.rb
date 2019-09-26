@@ -9,6 +9,7 @@ class LoginPage < BasePage
     @error_person_code = Element.new(:xpath, "//html/body/descendant::input[@name = 'personCode']/following::div[@class = 'invalid-feedback']")
     @input_phone_number = Element.new(:xpath, "//*[@id='e_application_root']/descendant::input[@name = 'phone']")
     @error_phone_number = Element.new(:xpath, "//*[@id='e_application_root']/descendant::input[@name = 'phone']/following::div[@class = 'invalid-feedback'][1]")
+    @button_cookie_agree = Element.new(:xpath, "/html/body/descendant::button[@class = 'cookie__btn js-cookie-agree _ga']")
   end
 
   def visible?
@@ -16,6 +17,10 @@ class LoginPage < BasePage
     @tab_mobileid.visible?
     @tab_idcard.visible?
     @button_next.visible?
+  end
+
+  def cookie_agree_click
+    @button_cookie_agree.click
   end
 
   def fill_person_code(code)

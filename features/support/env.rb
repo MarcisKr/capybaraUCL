@@ -36,6 +36,6 @@ end
 After do |scenario|
 end
 
-def add_cookie(name, value, domain, expiration_date)
+def add_cookie(name, value, domain)
     Capybara.current_session.driver.browser.manage.add_cookie(name: name, value: value, domain: domain)
 end
