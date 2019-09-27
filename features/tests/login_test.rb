@@ -5,6 +5,8 @@ class LoginTest
 
   def load_login_page
     @pages.page_login.load
+    Capybara.current_session.driver.browser.manage.add_cookie(name: "cookies_allowed", value: "0", domain: "test.unicredit.ee")
+    @pages.page_login.load
     @pages.page_login.visible?
   end
 

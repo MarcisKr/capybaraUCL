@@ -8,9 +8,12 @@ require 'site_prism'
 Capybara.app_host = "https://test.unicredit.ee/en/e-application"
 
 if ENV['chrome']
+    options = Selenium::WebDriver::Chrome::Options.new()
+    options.add_option("useAutomationExtension", false)
+    #options.setExperimentalOption("useAutomationExtension", false)
     Capybara.default_driver = :chrome
     Capybara.register_driver :chrome do |app|
-        Capybara::Selenium::Driver.new(app, browser: :chrome)
+        Capybara::Selenium::Driver.new(app, browser: :chrome, options: options)
     end
 elsif ENV['firefox']
     capabilities = Selenium::WebDriver::Remote::Capabilities.firefox(accept_insecure_certs: true)
@@ -28,7 +31,7 @@ end
 Before do |scenario|
     @pages = Pages.new
     @tests = Tests.new(@pages)
-    Capybara.current_session.driver.execute_script("window.resizeTo(1920,1080)")
+    Capybara.current_session.current_window.resize_to(1920,1080)
     Capybara.ignore_hidden_elements = false
     Capybara.default_max_wait_time = 30
 end
@@ -36,6 +39,6 @@ end
 After do |scenario|
 end
 
-def add_cookie(name, value, domain, expiration_date)
+def add_cookie(name, value, domain)
     Capybara.current_session.driver.browser.manage.add_cookie(name: name, value: value, domain: domain)
 end
