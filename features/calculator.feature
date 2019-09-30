@@ -24,17 +24,18 @@ Feature: Leasing calculator
         Given I am in calculator page with user - "00000000000"
         When I enter car price - "0"
         Then I see "Down payment is too large" calculator error
-    @zap
+    
     Scenario: Allowed mileage must be bigger than 0
         Given I am in calculator page with user - "00000000000"
         And I fill calculator for "operate" leasing for "New" "SKODA" "OCTAVIA" that costs "7777"
         When I enter "0" in allowed mileage field
         And I approve conditions
         Then I am in leasing calculator
-    @zap
-    Scenario: User can't approve conditions for car that costs more than 30k
+
+    Scenario: User can't approve conditions for car when first payment is equal or larger than 10k
         Given I am in calculator page with user - "00000000000"
-        And I fill calculator for "financial" leasing for "New" "Audi" "TT" that costs "30000"
+        And I fill calculator for "financial" leasing for "New" "Audi" "TT" that costs "21000"
+        And I enter "10000" in first payment field
         When I approve conditions neg
         Then I am in leasing calculator
     
